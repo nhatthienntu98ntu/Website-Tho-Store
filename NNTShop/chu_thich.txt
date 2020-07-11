@@ -1,0 +1,5 @@
+﻿
+	realpath() : Trả về tên đường dẫn tuyệt đối được chuẩn hóa
+	dirname(__FILE__) : Trả về đường dẫn của thư mục cha của _FILE_
+Cách sử dụng: $linkpath = realpath(dirname(__FILE__));
+		include_once ($linkpath."/file.php");

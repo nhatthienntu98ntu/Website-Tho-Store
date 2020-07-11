@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span#error-username,span#error-password {
+    color: red;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+button {
+    padding: 1rem 5rem;
+    background: linear-gradient(to left, #fc6767,#ec008c );
+    border-radius: 3rem;
+    margin: 3rem 0;
+    border: 3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 650ms;
+}
+
+button:hover {
+    background: linear-gradient(to right, #fc6767,#ec008c );
+}
+
+.login i {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.login {
+    text-align: center;
+}
+
+a.btn-login {
+    text-decoration: none;
+}
+
+span.bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.1);
+}
+
+span.bar::before {
+    width: 0%;
+    content: '';
+    height: 1px;
+    background-color: #fc6767;
+    position: absolute;
+    transition: 650ms;
+}
+.input-group input:focus + span.bar:before{
+    width: 100%;
+    height: 1.5px;
+}
+.input-group input {
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: black;
+    font-family: var(--font1);
+    margin-top: .5rem;
+}
+
+.input-group {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+.input-group i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #fc6767;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color:rgba(187, 155, 155, 0.06);
+}
+
+form {
+    background: white;
+    transform: translateX(10rem);
+    padding: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1.5rem rgba(0, 0, 0,.1);
+}
+
+span.form-heading {
+    position: absolute;
+    font-size: 3.5rem;
+    top: 3.5rem;
+    left: 14rem;
+    font-family: var(--font3);
+    color: white;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 40rem;
+    background: #fff;
+    padding: 10rem 0;
+    border-radius: 1rem;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 1px 1.5rem rgba(0, 0, 0,.1);
+    height: 50rem;
+}
+
+.form-container::before {content: '';width: 100%;position: absolute;top: 0;left: 0;height: 30rem;background: linear-gradient(to left, #fc6767,#ec008c   );border-bottom-right-radius: 100%;border-bottom-left-radius: 100%;z-index: -1;}
+html{
+    font-size: 10px;
+    font-family: var(--font1);
+    font-weight: bold;
+}
+.wrapper {
+    width: 90%;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+}
+:root{
+    --vang:#ffa900;
+    --cam:#dc5b21;
+    --do:#de1b1b;
+    --daquang:#66bbff;
+    --xanhdua:#99cd4e;
+    --main-font: 'Source Sans Pro', sans-serif;
+    --font4: 'Herr Von Muellerhoff', cursive;
+    --font3: 'Dancing Script', cursive;
+    --font2:'Kaushan Script', cursive;
+    --font1:'segoe ui light';
+}
+@media screen and (max-width:739px){
+    /* *{}; */
+    span.form-heading {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    form {
+        transform: inherit;
+        border-radius: initial;
+        border: none;
+    }
+    
+    .form-container::before {
+        height: 10rem;
+    };
+}
